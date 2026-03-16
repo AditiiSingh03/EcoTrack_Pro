@@ -1,0 +1,13 @@
+streamlit
+pandas
+plotly
+shap
+matplotlib
+joblib
+google-generativeai
+fpdf
+Pillow
+streamlit-option-menu
+streamlit-lottie
+requests
+scikit-learn
