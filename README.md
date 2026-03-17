@@ -77,10 +77,9 @@ Provides an AI-powered chat interface for sustainability-related questions and g
 - Pillow
 
 ---
-
 ## Project Structure
 
-```text
+
 EcoTrack-Pro
 │
 ├── app.py
@@ -105,6 +104,57 @@ Run the Streamlit app
 streamlit run app.py
 The application will start locally in your browser.
 
+---
+
+## Secrets Configuration
+
+This project uses the Gemini API to generate AI-based sustainability recommendations, power the chatbot assistant, and analyze uploaded images.
+For local development, create a file:
+.streamlit/secrets.toml
+Add the following configuration:
+GEMINI_API_KEY = "your_api_key_here"
+For Streamlit Cloud deployment:
+1. Open your deployed app dashboard.
+2. Go to **Settings → Secrets**.
+3. Add the same key.
+
+---
+
+## Model Handling
+
+The trained machine learning model is not stored directly inside the repository because GitHub restricts large files.
+
+Instead, the application automatically downloads the trained model from a GitHub Release when the app starts.
+
+This approach keeps the repository lightweight and allows the model to be updated independently without modifying the application code.
+
+---
+
+## Future Improvements
+
+Possible future extensions of the platform include:
+
+- Category-level carbon prediction using specialized sub-models
+- Historical emission tracking for each user
+- Personalized weekly sustainability goals
+- Regional and global emission comparison dashboards
+- Integration with real-world emission factor databases
+- Database-backed user authentication system
+- Mobile-friendly UI improvements
+
+---
+
+## Author
+
+**Aditi Singh**  
+B.Tech Computer Science & Information Technology  
+KIET Group of Institutions, Ghaziabad  
+
+GitHub:  
+https://github.com/AditiiSingh03
+
+LinkedIn:  
+https://www.linkedin.com/in/aditi-singh-991b22288/
 ---
 
 ## Secrets Configuration
