@@ -192,7 +192,7 @@ if "chat_history" not in st.session_state:
 # ==========================================
 try:
     genai.configure(api_key=GOOGLE_API_KEY)
-    model_ai = genai.GenerativeModel("gemini-1.5-pro-latest")
+    model_ai = genai.GenerativeModel("gemini-2.5-flash")
     ai_available = True
 except:
     ai_available = False
